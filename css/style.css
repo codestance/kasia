@@ -467,6 +467,8 @@ a {
 	display: inline-block;
 	vertical-align: middle;
 	align-items: right;
+	position: absolute;
+	right: 0;
 }
 
 
