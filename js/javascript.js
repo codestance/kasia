@@ -43,6 +43,23 @@ $(window).scroll(function(){
 	function getCurrentScroll() {
 		return window.pageYOffset || document.documentElement.scrollTop;
 	}
+});
 
-	
+$(function(){
+	$('#menu-button').click(function(){
+		$(this).toggleClass('menu-button_open');
+	});
+	$('#menu-button').click(function(){
+		$('#menu').toggleClass('menu-in');
+	});
+});
+
+$("a").on("click", function(event){
+	if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			
+			$('#menu').removeClass('menu-in'); // close right menu after click
+			$('#menu-button').removeClass('menu-button_open');
+		}
 });
