@@ -38,43 +38,71 @@ p{
 	margin-right: auto;
 }
 
+.header{
+	z-index: 999;
+	top: 0;
+	position: fixed;
+	width: 100%;
+}
+
 nav {
 	background: rgba(53,50,48,0.7);
 	height: 80px;
-	position: fixed;
+	/*position: fixed;*/
 	display: flex;
 	flex-direction: row;
-	/*justify-content: space-between;*/
+	justify-content: space-between;
 	align-items: center;
+	/*width: 100%;*/
+	/*transition: all .6s ease 0s;*/
+}
+
+.menu-button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 15px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	overflow: visible;
+	display: none;
+	transition: .5s ease-in-out;
+}
+
+.menu-button_span {
+	position: absolute;
+	display: block;
+	height: 4px;
 	width: 100%;
-	z-index: 100;
+	border-radius: 3px;
+	opacity: 1;
+	left: 0;
+	background: #fff;
+	transition: .25s ease-in-out;
 }
 
-@media (max-width: 985px){
-	h2 {
-		font-size: 2.5rem;
-	}
-	p {
-		font-size: 1.3rem;
-	}
+.menu-button_span:nth-child(1){
+	top:0px;
 }
-
-@media (max-width: 767px) {
-	nav {
-		height: 50px; } 
-
-	h1 {
-		font-size: 2.5rem;
-	}
-	h2 {
-		font-size: 2.0rem;
-	}
-	h3 {
-		font-size: 1.3rem;
-	}
-	p {
-		font-size: 1rem;
-	}
+.menu-button_span:nth-child(2),
+.menu-button_span:nth-child(3){
+	top:10px;
+}
+.menu-button_span:nth-child(4){
+	top:20px;
+}
+.menu-button_open .menu-button_span:nth-child(1){
+	width: 0%;
+}
+.menu-button_open .menu-button_span:nth-child(2){
+	transform: rotate(45deg);
+}
+.menu-button_open .menu-button_span:nth-child(3){
+	transform: rotate(-45deg);
+}
+.menu-button_open .menu-button_span:nth-child(4){
+	width: 0%;
 }
 
 .nav-scroll {
@@ -110,6 +138,15 @@ a {
 	margin-left: 20px;
 	color: #fff;
 	cursor: pointer;
+	position: relative;
+	display: block;
+	transition: all .6s ease 0s;
+}
+
+.menu-link:hover {
+	color: #E5E5E5;
+	outline-width: 0;
+	transition: all .6s ease 0s;
 }
 
 /*image*/
@@ -315,7 +352,10 @@ a {
 		line-height: 20vh;
 	}
 	.teaching-column{
-		height: 15vh;
+		height: 13vh;
+	}
+	.teaching-row{
+		margin: 10px;
 	}
 }
 
@@ -365,7 +405,7 @@ a {
 }
 
 .hobby-title {
-	position: absolute;
+	/*position: absolute;*/
 	vertical-align: middle;
 	/*padding-top: 20px*/;
 	text-align: center;
@@ -399,8 +439,8 @@ a {
 }
 
 .contact-column-1 {
-	background-image: url(../images/contact.jpg);
-	/*background-image: url(../images/creation.jpg);*/
+	/*background-image: url(../images/contact.jpg);*/
+	background-image: url(../images/adam.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -431,7 +471,7 @@ a {
 	/*font-size: 16px;*/
 	/*font-size: 3vmin;*/
 	/*color: #cccccc;*/
-	font-size: 2.5vmin;
+	font-size: 1.0rem;
 	color: #353230;
 	text-align: left;
 	text-decoration: none;
@@ -444,21 +484,33 @@ a {
 }
 
 @media(max-width: 767px) {
+	.contact {
+		height: 300px;
+	}
+	.contact-container {
+		height: 300px;
+	}
 	.contact-column-1,
 	.contact-column-2 {
 		display: flex;
-		flex-direction: column;
+		justify-content: center;
 		width: 100%;
 	}
 	.contact-column-1 {
 		height: 100px;
 	}
-	.contact-column-2 {
-		height: 200px;
-	}
 	.contact-title {
 		line-height: 100px;
+		width: 100%;
 	}
+	.contact-column-2 {
+		height: 200px;
+		flex-direction: column;
+	}
+	.contact-content {
+		padding: 5px;
+	}
+	
 }
 
 
@@ -469,6 +521,7 @@ a {
 	background-color: #353230;
 	width: 100%;
 	height: 45px;
+	display: flex;
 }
 
 .footer-container {
@@ -491,4 +544,62 @@ a {
 
 }
 
+
+@media (max-width: 985px){
+	h2 {
+		font-size: 2.5rem;
+	}
+	p {
+		font-size: 1.3rem;
+	}
+}
+
+@media (max-width: 767px) {
+	nav {
+		height: 50px; } 
+
+	h1 {
+		font-size: 2.5rem;
+	}
+	h2 {
+		font-size: 2.0rem;
+	}
+	h3 {
+		font-size: 1.3rem;
+	}
+	p {
+		font-size: 1rem;
+	}
+		.menu-list {
+		display: block;
+    	overflow: hidden;
+    	background: rgba(53,50,48,0.7);
+    	line-height: 50px;
+    	margin-right: -10px;
+    	list-style: none;
+    	padding-left: 10px;
+    	margin-top: 42px;
+    	padding-top: 5%;
+    	position: fixed;
+    	/*text-align: left;*/
+    	top: 8px;
+    	right: 0;
+    	/*visibility: hidden;*/
+    	width: 0px;
+		/*transition: all .6s ease 0s;*/
+	}
+	.menu-item {
+		display: block;
+		text-align: left;
+	}
+	.menu-in {
+		width: 170px;
+		visibility:visible;
+		transition: all .6s ease 0s;
+	}
+	
+	.menu-button {
+		display: block;
+	}
+}
 
