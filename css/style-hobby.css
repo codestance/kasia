@@ -161,6 +161,7 @@ button {
 	align-items: center;
 	border-radius: 10px;
 	border-width: 0;
+	cursor: pointer;
 }
 
 .left {
