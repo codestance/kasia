@@ -118,7 +118,8 @@ h1{
 .description {
 	font-family: "Montserrat";
 	font-size: 1.5rem;
-	text-align: justify;
+	/*text-align: justify;*/
+	text-align: center;
 	color: #fff;
 	cursor: default;
 	margin: 0;
