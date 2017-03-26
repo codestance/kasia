@@ -348,6 +348,7 @@ nav {
 	.home-container{
 		height: 50vh;
 		top: 25vh;
+		padding: 15px;
 	}
 }
 
