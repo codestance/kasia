@@ -331,6 +331,7 @@ nav {
 	.home-container {
 		display: flex;
 		flex-direction: column;
+		padding: 15px;
 	}
 	.home-column {
 		width: 100%;
@@ -348,7 +349,7 @@ nav {
 	.home-container{
 		height: 50vh;
 		top: 25vh;
-		padding: 15px;
+		padding: 8px 15px;
 	}
 }
 
