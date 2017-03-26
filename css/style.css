@@ -344,6 +344,13 @@ nav {
 	}
 }
 
+@media (max-width: 484px){
+	.home-container{
+		height: 50vh;
+		top: 25vh;
+	}
+}
+
 /*teaching*/
 .teaching {
 	background-color: #F2F2F2;
