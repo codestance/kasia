@@ -155,7 +155,6 @@ nav {
 
 /*li*/
 .menu-item {
-	/*padding: 0.5em 0.2em 0.1em 0.2em;*/
 	display: inline-block;
 	list-style: none;
 }
@@ -191,12 +190,9 @@ nav {
     		margin-top: 42px;
     		padding-top: 5%;
     		position: fixed;
-    		/*text-align: left;*/
     		top: 8px;
     		right: 0;
-    		/*visibility: hidden;*/
     		width: 0px;
-		/*transition: all .6s ease 0s;*/
 	}
 	.menu-item {
 		display: block;
@@ -403,14 +399,6 @@ nav {
 	outline-width: 0;
 	transition: all .6s ease 0s;
 }
-/*.teaching-plan {
-	
-}*/
-
-/*.teaching-image {
-	/*max-height: 400px;
-	padding: 10px 0 10px 0;
-}*/
 
 @media (max-width: 985px){
 	.teaching-row {
@@ -450,8 +438,6 @@ nav {
 }
 
 .hobby-container {
-	/*align-items: : center;*/
-	/*background-color: #353230;*/
 	background-size: cover;
 	position: absolute;
 	width: 100%;
@@ -459,11 +445,6 @@ nav {
 }
 
 .title-holder {
-	/*background-color: rgba(115,115,115,0.5);
-	width: 45%;
-	margin: 0;
-	display: block;
-	text-align: center;*/
 	box-sizing: border-box;
 	position: absolute;
 	display: flex;
@@ -479,23 +460,12 @@ nav {
 }
 
 .hobby-column {
-	/*position: absolute;
-   	 left: 50%;
-   	 margin-top: 40%;*/
  	 text-align: center;
-    	/*height: 45%*/
 }
 
 .hobby-title {
-	/*position: absolute;*/
 	vertical-align: middle;
-	/*padding-top: 20px*/;
 	text-align: center;
-	/*width: 45%;
-	height: 45%
-	top:50%;
-	left: 50%;
-	background-color: rgba(51,50,48,0.3);*/
 }
 
 .hobby-image {
@@ -520,7 +490,6 @@ nav {
 }
 
 .contact-column-1 {
-	/*background-image: url(../images/contact.jpg);*/
 	background-image: url(../images/adam.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -557,7 +526,7 @@ nav {
 }
 
 .contact-content:hover {
-	color: FAB23A;
+	color: #FAB23A;
 }
 
 .fa {
