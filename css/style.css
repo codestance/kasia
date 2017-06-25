@@ -113,7 +113,7 @@ nav {
 	border-radius: 3px;
 	opacity: 1;
 	left: 0;
-	background: #fff;
+	background: #FAB23A;
 	transition: .25s ease-in-out;
 }
 
@@ -182,7 +182,7 @@ nav {
 	.menu-list {
 		display: block;
     		overflow: hidden;
-    		background: rgba(53,50,48,0.7);
+    		background: rgba(53,50,48,0.9);
     		line-height: 50px;
     		margin-right: -10px;
     		list-style: none;
@@ -214,41 +214,42 @@ nav {
 	width: 100%;
 	height: auto;
 }
+/*end of menu*/
 
 /*H O M E  P A G E*/
 .home {
 	background-image: url(../images/bg.png);
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 500px;
+	min-height: 360px;
 	width: 100%;
 	height: 100vh;
 }
 
 .home-container {
 	display: flex;
-    	box-sizing: border-box;
-    	padding: 20px;
+    box-sizing: border-box;
+    padding: 20px;
    	flex-direction: row;
 	align-items: center;
 	align-content: space-between;
-   	 position: absolute;
-    	width: 100%;
-    	height: 40vh;
-    	top: 30vh;
-    	background: rgba(53,50,48,0.7);
+   	position: absolute;
+    width: 100%;
+    height: 40vh;
+    top: 30vh;
+    background: rgba(53,50,48,0.7);
 }
 
 .home-column {
 	display: flex;
-    	flex-direction: column;
-    	align-items: center;
-    	height: 100%;
-    	width: 50%;
-    	text-align: center;
-    	justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
 }
 
 .title {
@@ -317,6 +318,13 @@ nav {
 		font-size: 1.2rem;
 	}
 }
+@media(max-height: 360px){
+	.home-container{
+		height: 160px;
+		top: 70px;
+	}
+}
+
 
 /*teaching*/
 .teaching {
@@ -327,6 +335,7 @@ nav {
 .teaching-container {
 	margin: 0;
 	height: 100vh;
+	min-height: 360px;
 }
 
 .teaching-part-1 {
@@ -430,11 +439,21 @@ nav {
 	}
 }
 
+@media (max-height: 360px){
+	.teaching-part-1 {
+		height: 72px;
+	}
+	.teaching-part-2 {
+		height: 288px;
+	}
+}
+
 /*hobby*/
 .hobby{
 	background-color: #353230;
 	width: 100%;
 	height: 100vh;
+	min-height: 360px;
 }
 
 .hobby-container {
@@ -442,6 +461,7 @@ nav {
 	position: absolute;
 	width: 100%;
 	height: 100vh;
+	min-height: 360px;
 }
 
 .title-holder {
@@ -473,6 +493,15 @@ nav {
 	height: 100%;
 	object-fit: cover;
 	margin: 0;
+}
+
+@media (max-height: 360px){
+	.title-holder{
+		height: 162px;
+	}
+	.hobby-image{
+		height: 360px;
+	}
 }
 
 /*contact*/
