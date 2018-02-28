@@ -1,1 +1,1 @@
-if.pwr.edu.pl/~gwozdz
+https://marrow00.github.io/kasia/
