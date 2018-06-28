@@ -63,3 +63,12 @@ $("a").on("click", function(event){
 			$('#menu-button').removeClass('menu-button_open');
 		}
 });
+
+
+if ($(window).width()>1024){
+	debugger;
+	$(window).on('resize', function(){
+		var setHeight = $('#teaching').height();
+		$('.teaching-title').css("line-height", setHeight + 'px');
+	}).resize();
+}

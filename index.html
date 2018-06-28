@@ -8,15 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Katarzyna Gwóźdź - doktorantka na Wydziale Podstawowych Problemów Techniki Politechniki Wrocławskiej">
     <meta name="keywords" content="pwr, lpf">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' type='text/css'>
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <!-- <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' type='text/css'> -->
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
    </head>
 
    <body>
    		<main>
    			<header class ="header">
-   				<div class="container">   		
+   				<div>   		
    					<nav>
               			<button id="menu-button" class="menu-button" type="button" data-target="#menu">
                 			<span class="menu-button_span"></span>
@@ -27,6 +27,7 @@
    						<ul class ="menu-list" id="menu">
    							<li class="menu-item"><a href=#home class="menu-link">Strona główna</a></li>
    							<li class="menu-item"><a href=#teaching class="menu-link">Dydaktyka</a></li>
+   							<li class="menu-item"><a href=#articles class="menu-link">Artykuły</a></li>
    							<li class="menu-item"><a href=#hobby class="menu-link">Hobby</a></li>
    							<li class="menu-item"><a href=#contact class="menu-link">Kontakt</a></li>
    						</ul>
@@ -36,7 +37,7 @@
         
    			<section class="home" id="home">
    				<div class="home-column info">
-   					<div class="container home-info">
+   					<div class="home-info">
    						<h1 class ="title home-title">Katarzyna Gwóźdź</h1>
    						<a href="mailto: katarzyna.r.gwozdz@pwr.edu.pl" class="home-mail">katarzyna.<span class="home-r">r</span>.gwozdz@pwr.edu.pl</a>
    					</div>
@@ -47,50 +48,32 @@
    			</section>
 
    			<section class ="teaching" id="teaching">
-   				<div class="container teaching-container">
+   				<!-- <div class="teaching-container"> -->
    					<div class="teaching-part-1">
    						<h2 class="title teaching-title">Dydaktyka</h2>
    					</div>
-   					<div class="teaching-part-2 container">
+   					<div class="teaching-part-2">
    						<h3 class="title teaching-subtitle">Zajęcia w semestrze letnim 2017/2018</h3>
-              			<div class="teaching-row">
-                			<div class="teaching-column">
-                  				<p class="teaching-plan">Piątek<br>7.30 - 9.00, 9.15-11</p>
-                			</div>
-                			<div class="teaching-column">
+              			<div class="classes">
+                			<div class="class">
                   				<p class="teaching-plan">
                     				<a href=labview.html class="teaching-link">
-                    					Komputerowe wspomaganie eksperymentu Labview <br>
+                    					Komputerowe wspomaganie eksperymentu Labview <br>Piątek<br>7.30 - 9.00, 9.15-11
                     				</a>
                   				</p>
                 			</div>
-              			</div>
-              			<div class="teaching-row">
-                			<div class="teaching-column">
-                  				<p class="teaching-plan"><br></p>
-                			</div>
-                			<div class="teaching-column">
+                			<div class="class">
                   				<p class="teaching-plan">
-                    				<a href=fizyka3-1.html class="teaching-link">
-                    					Fizyka 3.1<br>51/A1
-                    				</a>
+                    				Konsultacje<br>231a/A1 <br>Poniedziałek<br>13.00 - 15.00
                   				</p>
                 			</div>
-              			</div>
-              			<div class="teaching-row">
-                			<div class="teaching-column">
-                  				<p class="teaching-plan">Poniedziałek<br>13.00 - 15.00</p>
-                			</div>
-                			<div class="teaching-column">
-                  				<p class="teaching-plan">Konsultacje<br>231a/A1</p>
-               	 			</div>
               			</div>
    					</div>
-   				</div>
+   				<!-- </div> -->
    			</section>
 
    			<section class = "hobby" id="hobby">
-   				<div class="container hobby-container">
+   				<div class="hobby-container">
             	<a href=hobby.html class="hobby-link">
    					<div class="title-holder hobby-column"><h2 class="title hobby-title">Hobby</h2></div>
    					<img src="images/slide1.jpg" alt="Tatry Wysokie" class="hSlide hobby-image">
@@ -104,7 +87,7 @@
    			</section>
         
    			<section class = "contact" id="contact">
-   				<div class = "container contact-container">
+   				<div class = "contact-container">
    					<div class="contact-column-1">
    						<h2 class="title contact-title">Kontakt</h2>
    					</div>
@@ -127,8 +110,8 @@
         
    		</main>
      
-   		<footer class="footer container">
-   			<div class="logos container">
+   		<footer class="footer">
+   			<div class="logos">
           		<a target="_blank" href="http://www.leps.pwr.edu.pl/index.php" class="footer-link">
           			<div class="footer-logo">
             			<img src="images/logo.png" class="f-image" alt="LEPS">
@@ -146,7 +129,7 @@
 				</a>
 			</div>
           	<div class="footer-p">
-   			  	<p class="footer-paragraph">K.&nbsp;R.&nbsp;Gwóźdź, 2017</p>
+   			  	<p class="footer-paragraph">K.&nbsp;R.&nbsp;Gwóźdź, 2018</p>
           	</div>
    		</footer>
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
