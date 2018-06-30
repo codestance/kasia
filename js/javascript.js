@@ -30,20 +30,20 @@ $(function smoothScroll() {
 });
 
 
-$(window).scroll(function(){
-	var shrinkHeader = 100;
-	var scroll = getCurrentScroll();
-	if (scroll >= shrinkHeader){
-		$('nav').addClass('nav-scroll');
-	}
-	else {
-		$('nav').removeClass('nav-scroll');
-	}
+// $(window).scroll(function(){
+// 	var shrinkHeader = 100;
+// 	var scroll = getCurrentScroll();
+// 	if (scroll >= shrinkHeader){
+// 		$('nav').addClass('nav-scroll');
+// 	}
+// 	else {
+// 		$('nav').removeClass('nav-scroll');
+// 	}
 		
-	function getCurrentScroll() {
-		return window.pageYOffset || document.documentElement.scrollTop;
-	}
-});
+// 	function getCurrentScroll() {
+// 		return window.pageYOffset || document.documentElement.scrollTop;
+// 	}
+// });
 
 $(function(){
 	$('#menu-button').click(function(){
@@ -64,11 +64,30 @@ $("a").on("click", function(event){
 		}
 });
 
+$('.more').on('click',function(){
+	$('.articles-content-more').css('display', 'block');
+	$('.more').css('display','none');
+})
+$('.less').on('click',function(){
+	$('.articles-content-more').css('display', 'none');
+	$('.more').css('display','block');
+})
 
-if ($(window).width()>1024){
-	debugger;
+
+var tablet = 1024;
+if ($(window).width()>tablet){
 	$(window).on('resize', function(){
-		var setHeight = $('#teaching').height();
+		var setHeight = $('.teaching-part-1').height();
 		$('.teaching-title').css("line-height", setHeight + 'px');
+
+		var artH = $('.articles-content').height() + 40;
+		$('.articles-title-box').css('height', artH + 'px');
+		$('.articles-title').css('line-height', artH + 'px');
 	}).resize();
 }
+
+// $(window).on('resize',function(){
+// 	var artH = $('.articles-content').height() + 40;
+// 	$('.articles-title-box').css('height', artH + 'px');
+// 	$('.articles-title').css('line-height', artH + 'px');
+// }).resize();
