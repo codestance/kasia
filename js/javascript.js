@@ -80,7 +80,9 @@ if ($(window).width()>tablet){
 		var setHeight = $('.teaching-part-1').height();
 		$('.teaching-title').css("line-height", setHeight + 'px');
 
-		var artH = $('.articles-content').height() + 40;
+
+		var artPadd = parseInt($('.articles-content').css('padding-top'))+parseInt($('.articles-content').css('padding-bottom'));
+		var artH = $('.articles-content').height() + artPadd;
 		$('.articles-title-box').css('height', artH + 'px');
 		$('.articles-title').css('line-height', artH + 'px');
 	}).resize();

@@ -453,7 +453,7 @@ nav {
   height: 100%;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   align-items: center;
   right: 0;
 }
@@ -555,7 +555,7 @@ nav {
 /* line 420, ../sass/main.scss */
 .articles-content, .articles-content-more {
   width: 70%;
-  padding: 20px;
+  padding: 50px 20px 20px 20px;
   text-align: justify;
 }
 @media (max-width: 1024px) {
@@ -575,19 +575,20 @@ nav {
 .year {
   color: #FAB23A;
   padding: 10px;
+  margin: 0;
 }
 
-/* line 437, ../sass/main.scss */
+/* line 438, ../sass/main.scss */
 .publication {
   padding: 5px;
 }
 
-/* line 440, ../sass/main.scss */
+/* line 441, ../sass/main.scss */
 .bolder {
   font-weight: bolder;
 }
 
-/* line 443, ../sass/main.scss */
+/* line 444, ../sass/main.scss */
 .more, .less {
   background: transparent;
   color: #FAB23A;
@@ -596,13 +597,13 @@ nav {
   padding: 5px;
   font-weight: bolder;
 }
-/* line 450, ../sass/main.scss */
+/* line 451, ../sass/main.scss */
 .more:hover, .less:hover {
   color: #353230;
 }
 
 /* - - H O B B Y - - */
-/* line 458, ../sass/main.scss */
+/* line 459, ../sass/main.scss */
 .hobby {
   background-color: #353230;
   width: 100%;
@@ -610,7 +611,7 @@ nav {
   min-height: 411px;
 }
 
-/* line 465, ../sass/main.scss */
+/* line 466, ../sass/main.scss */
 .hobby-container {
   background-size: cover;
   position: absolute;
@@ -619,7 +620,7 @@ nav {
   min-height: 411px;
 }
 
-/* line 473, ../sass/main.scss */
+/* line 474, ../sass/main.scss */
 .title-holder {
   position: absolute;
   display: -webkit-flex;
@@ -636,24 +637,24 @@ nav {
   background-color: rgba(115, 115, 115, 0.5);
 }
 @media (max-width: 411px) and (orientation: portrait) {
-  /* line 473, ../sass/main.scss */
+  /* line 474, ../sass/main.scss */
   .title-holder {
     height: 30%;
   }
 }
 
-/* line 490, ../sass/main.scss */
+/* line 491, ../sass/main.scss */
 .hobby-column {
   text-align: center;
 }
 
-/* line 494, ../sass/main.scss */
+/* line 495, ../sass/main.scss */
 .hobby-title {
   vertical-align: middle;
   text-align: center;
 }
 
-/* line 499, ../sass/main.scss */
+/* line 500, ../sass/main.scss */
 .hobby-image {
   width: 100%;
   height: 100%;
@@ -663,21 +664,21 @@ nav {
 
 /* - - E N D of H O B B Y - - */
 /* - - C O N T A C T - - */
-/* line 509, ../sass/main.scss */
+/* line 510, ../sass/main.scss */
 .contact {
   background-color: #F2F2F2;
   width: 100%;
   height: auto;
 }
 
-/* line 515, ../sass/main.scss */
+/* line 516, ../sass/main.scss */
 .contact-container {
   align-items: center;
   width: 100%;
   height: 100%;
 }
 
-/* line 521, ../sass/main.scss */
+/* line 522, ../sass/main.scss */
 .contact-column-1 {
   background-image: url(../images/adam.jpg);
   background-repeat: no-repeat;
@@ -690,7 +691,7 @@ nav {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 521, ../sass/main.scss */
+  /* line 522, ../sass/main.scss */
   .contact-column-1 {
     height: 80px;
     display: -webkit-flex;
@@ -701,18 +702,18 @@ nav {
   }
 }
 
-/* line 539, ../sass/main.scss */
+/* line 540, ../sass/main.scss */
 .contact-title {
   line-height: 200px;
 }
 @media (max-width: 768px) {
-  /* line 539, ../sass/main.scss */
+  /* line 540, ../sass/main.scss */
   .contact-title {
     line-height: 80px;
   }
 }
 
-/* line 546, ../sass/main.scss */
+/* line 547, ../sass/main.scss */
 .contact-column-2 {
   width: 55%;
   height: 100%;
@@ -726,7 +727,7 @@ nav {
   padding: 20px;
 }
 @media (max-width: 768px) {
-  /* line 546, ../sass/main.scss */
+  /* line 547, ../sass/main.scss */
   .contact-column-2 {
     padding: 10px;
     width: 100%;
@@ -734,7 +735,7 @@ nav {
   }
 }
 
-/* line 561, ../sass/main.scss */
+/* line 562, ../sass/main.scss */
 .contact-content {
   font-size: 1.0rem;
   color: #353230;
@@ -744,22 +745,22 @@ nav {
   display: -webkit-flex;
   display: flex;
 }
-/* line 568, ../sass/main.scss */
+/* line 569, ../sass/main.scss */
 .contact-content p {
   padding-left: 10px;
 }
-/* line 571, ../sass/main.scss */
+/* line 572, ../sass/main.scss */
 .contact-content:hover {
   color: #FAB23A;
 }
 
-/* line 576, ../sass/main.scss */
+/* line 577, ../sass/main.scss */
 .contact-img {
   height: 30px;
   width: auto;
 }
 @media (max-width: 768px) {
-  /* line 576, ../sass/main.scss */
+  /* line 577, ../sass/main.scss */
   .contact-img {
     height: 20px;
   }
@@ -767,7 +768,7 @@ nav {
 
 /* - - E N D of C O N T A C T - - */
 /* - - F O O T E R - - */
-/* line 611, ../sass/main.scss */
+/* line 588, ../sass/main.scss */
 .footer {
   background-color: #353230;
   width: 100%;
@@ -776,65 +777,44 @@ nav {
   padding: 5px;
   position: relative;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: auto 130px;
 }
 
-/* line 620, ../sass/main.scss */
-.footer::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 625, ../sass/main.scss */
+/* line 600, ../sass/main.scss */
 .logos {
-  position: absolute;
-  left: 0;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -moz-flex;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: row;
-  -moz-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  flex-wrap: wrap;
-  float: left;
-  margin-right: 140px;
+  display: grid;
+  grid-auto-rows: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(55px, 1fr));
+  grid-gap: 5px;
+  width: 100%;
 }
 
-/* line 643, ../sass/main.scss */
-.logos::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* line 649, ../sass/main.scss */
+/* line 608, ../sass/main.scss */
 .footer-link {
   display: block;
   height: 40px;
+  justify-self: center;
 }
 
-/* line 654, ../sass/main.scss */
+/* line 614, ../sass/main.scss */
 .footer-logo {
   height: 40px;
 }
 
-/* line 658, ../sass/main.scss */
+/* line 618, ../sass/main.scss */
 .footer-p {
-  position: absolute;
-  right: 5px;
+  align-self: end;
+  justify-self: end;
 }
 
-/* line 663, ../sass/main.scss */
+/* line 625, ../sass/main.scss */
 .f-image {
   max-height: 40px;
   width: auto;
 }
 
-/* line 668, ../sass/main.scss */
+/* line 630, ../sass/main.scss */
 .footer-paragraph {
   font-size: 14px;
   color: #fff;

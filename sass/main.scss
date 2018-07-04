@@ -343,7 +343,7 @@ nav {
 .teaching-part-2 {
 	height: 100%;
 	@include justify-content(center);
-	padding: 20px;
+	padding: 50px 20px 20px 20px;
 	align-items: center;
 	right: 0;
 	@media(max-width:$tablet){
@@ -419,7 +419,7 @@ nav {
 }
 .articles-content{
 	width: 70%;
-	padding: 20px;
+	padding: 50px 20px 20px 20px;
 	text-align: justify;
 	@media(max-width: $tablet){
 		width: 100%;
@@ -433,6 +433,7 @@ nav {
 .year{
 	color: $secondary;
 	padding: 10px;
+	margin: 0;
 }
 .publication{
 	padding: 5px;
@@ -568,9 +569,9 @@ nav {
 	p{
 		padding-left: 10px;
 	}
-		&:hover{
-			color: $secondary;
-		}
+	&:hover{
+		color: $secondary;
+	}
 }
 
 .contact-img{
@@ -581,30 +582,6 @@ nav {
 	}
 }
 
-@media(max-width: $tablet2) {
-	// .contact-column-1,
-	// .contact-column-2 {
-	// 	display: -webkit-box;
- //  		display: -moz-box;
- //  		display: -ms-flexbox;
- //  		display: -moz-flex;
- //  		display: -webkit-flex;
-	// 	display: flex;
-	// 	justify-content: center;
-	// 	width: 100%;
-	// }
-	
-	// .contact-column-2 {
-	// 	height: 200px;
-	// 	-webkit-flex-direction: column;
- //  		-moz-flex-direction: column;
- //  		-ms-flex-direction: column;
-	// 	flex-direction: column;
-	// }
-	// .contact-content {
-	// 	padding: 5px;
-	// }
-}
 /* - - E N D of C O N T A C T - - */
 
 /* - - F O O T E R - - */
@@ -616,39 +593,22 @@ nav {
 	padding: 5px;
 	position: relative;
 	overflow: hidden;
-}
-.footer::after{
-	content: "";
-	display: table;
-	clear: both;
-}
-.logos{
-	position: absolute;
-	left: 0;
-	display: -webkit-box;
-  	display: -moz-box;
-  	display: -ms-flexbox;
-  	display: -moz-flex;
-  	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-  	-moz-flex-direction: row;
-  	-ms-flex-direction: row;
-	flex-direction: row;
-    flex-wrap: wrap;
-    float: left;
-    margin-right: 140px;
+	display: grid;
+	grid-template-columns: auto 130px;
 }
 
-.logos::after{
-	content: "";
-	display: table;
-	clear: both;
+.logos{
+	display: grid;
+	grid-auto-rows: 40px;
+	grid-template-columns: repeat(auto-fill, minmax(55px,1fr));
+	grid-gap: 5px;
+	width: 100%;
 }
 
 .footer-link{
 	display: block;
 	height: 40px;
+	justify-self: center;
 }
 
 .footer-logo {
@@ -656,8 +616,10 @@ nav {
 }
 
 .footer-p {
-	position: absolute;
-	right: 5px;
+	// position: absolute;
+	// right: 5px;
+	align-self: end;
+	justify-self: end;
 }
 
 .f-image {
