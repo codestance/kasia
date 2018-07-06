@@ -1,0 +1,64 @@
+@import '_reset';
+@import '_variables';
+@import 'compass/css3';
+@import url('https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext');
+
+html,body {
+	font-family:'Montserrat';
+	scroll-behavior: smooth;
+	background: $lightBg;
+}
+
+.back-button-box{
+	height: 50px;
+	position: relative;
+}
+
+.back-button{
+	height: 30px;
+	width: auto;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	z-index: 1;
+	cursor: pointer;
+}
+
+h1{
+	font-size: 1.5em;
+	color: $secondary;
+	padding: 0 20px;
+}
+
+p{
+	font-size: 1.2em;
+	color: $primary;
+}
+
+a{
+	text-decoration: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	padding: 20px;
+	@include columns(250px 3);
+	@include column-gap(1em);
+	@include column-rule(1px solid $secondary);
+}
+
+.instructions{
+	margin: 0;
+	padding: 10px 0;
+	a{
+		color: $primary;
+		&:hover{
+			color: $secondary;
+		}
+	}
+}

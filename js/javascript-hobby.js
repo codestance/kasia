@@ -22,9 +22,11 @@ $('.image').on('click', function(){
 	$(img).attr('src',src);
 	$('.fullscreen').css('display','block');
 	$('.fullscreen').append(img);
+	$('description-box').css('display', 'block');
 })
 
 $('.btn-close').on('click',function(){
+	$('.fullscreen').children('img').remove();
 	$('.fullscreen').css('display','none');
 })
 

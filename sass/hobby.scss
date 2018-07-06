@@ -23,6 +23,7 @@ html,body {
 	bottom: 0;
 	left: 10px;
 	z-index: 1;
+	cursor: pointer;
 }
 
 .photos-box{
@@ -130,5 +131,9 @@ html,body {
 }
 
 .description-box{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 300px;
 	display: none;
 }
