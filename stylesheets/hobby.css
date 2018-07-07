@@ -80,8 +80,7 @@ html, body {
 .photo-box:nth-child(2),
 .photo-box:nth-child(8),
 .photo-box:nth-child(11),
-.photo-box:nth-child(14),
-.photo-box:nth-child(21) {
+.photo-box:nth-child(14) {
   grid-column: span 2;
   grid-row: span 2;
 }
@@ -90,19 +89,17 @@ html, body {
   .photo-box:nth-child(2),
   .photo-box:nth-child(8),
   .photo-box:nth-child(11),
-  .photo-box:nth-child(14),
-  .photo-box:nth-child(21) {
+  .photo-box:nth-child(14) {
     grid-column: span 1;
     grid-row: span 1;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 65, ../sass/hobby.scss */
+  /* line 67, ../sass/hobby.scss */
   .photo-box:nth-child(5),
   .photo-box:nth-child(10),
-  .photo-box:nth-child(17),
-  .photo-box:nth-child(22) {
+  .photo-box:nth-child(17) {
     grid-column: span 2;
     grid-row: span 2;
   }
@@ -177,8 +174,18 @@ html, body {
 /* line 133, ../sass/hobby.scss */
 .description-box {
   position: absolute;
+  z-index: 1;
   bottom: 10px;
   right: 10px;
   width: 300px;
+  background: rgba(53, 50, 48, 0.7);
+}
+
+/* line 142, ../sass/hobby.scss */
+.description {
   display: none;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.3em;
 }
