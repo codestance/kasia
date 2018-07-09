@@ -336,7 +336,7 @@ nav {
 
 .teaching-title {
 	@media(max-width:$tablet){
-		line-height: 80px;
+		// line-height: 80px;
 	}
 }
 
@@ -349,6 +349,7 @@ nav {
 	@media(max-width:$tablet){
 		width: 100%;
 		height: auto;
+		padding-top: 10px;
 	}
 }
 .teaching-subtitle {
@@ -397,9 +398,13 @@ nav {
 .articles{
 	width: 100%;
 	background: $lightBg;
+	position: relative;
 }
 .articles-title-box{
-	float: right;
+	position: absolute;
+	height: 100%;
+	// float: right;
+	right: 0;
 	width: 30%;
 	background: $primary;
 	background-image: url(../images/publications.jpg);
@@ -409,12 +414,12 @@ nav {
 	@media(max-width: $tablet){
 		width: 100%;
 		height: 80px;
-		float: none;
+		// float: none;
 	}
 }
 .articles-title{
 	@media(max-width: $tablet){
-		line-height: 80px;
+		// line-height: 80px;
 	}
 }
 .articles-content{
@@ -423,6 +428,7 @@ nav {
 	text-align: justify;
 	@media(max-width: $tablet){
 		width: 100%;
+		padding-top: 90px;
 	}
 }
 .articles-content-more{
@@ -483,6 +489,7 @@ nav {
 	padding: 20px;
 	margin: 0 20px 0 0;
 	background-color: rgba(115,115,115,0.5);
+	z-index: 1;
 	@media(max-width: $phone) and (orientation: portrait){
 		height: 30%;
 	}
@@ -502,6 +509,8 @@ nav {
 	height: 100%;
 	object-fit: cover;
 	margin: 0;
+	// display: none;
+	position: absolute;
 }
 
 /* - - E N D of H O B B Y - - */

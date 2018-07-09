@@ -102,7 +102,7 @@ $('.btn-left').on('click', function () {
 
 $(document).keydown(function (e) {
     "use strict";
-    if ($('.fullscreen').css('display', 'block')) {
+    if ($('.fullscreen').css('display') === 'block') {
         switch (e.key) {
         case 'ArrowLeft':
             imgNav('prev');
@@ -116,9 +116,7 @@ $(document).keydown(function (e) {
         default:
             return;
         }
-        return false;
+        e.preventDefault();
     }
-    e.preventDefault();
     e.stopPropagation();
-    return false;
 });

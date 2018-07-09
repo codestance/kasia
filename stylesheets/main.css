@@ -443,13 +443,6 @@ nav {
   }
 }
 
-@media (max-width: 1024px) {
-  /* line 337, ../sass/main.scss */
-  .teaching-title {
-    line-height: 80px;
-  }
-}
-
 /* line 343, ../sass/main.scss */
 .teaching-part-2 {
   height: 100%;
@@ -464,16 +457,17 @@ nav {
   .teaching-part-2 {
     width: 100%;
     height: auto;
+    padding-top: 10px;
   }
 }
 
-/* line 354, ../sass/main.scss */
+/* line 355, ../sass/main.scss */
 .teaching-subtitle {
   margin-bottom: 10px;
   text-shadow: none;
 }
 
-/* line 358, ../sass/main.scss */
+/* line 359, ../sass/main.scss */
 .classes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -482,31 +476,31 @@ nav {
   text-align: center;
 }
 @media (max-width: 414px) {
-  /* line 358, ../sass/main.scss */
+  /* line 359, ../sass/main.scss */
   .classes {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-/* line 369, ../sass/main.scss */
+/* line 370, ../sass/main.scss */
 .class {
   border: 1px solid #FAB23A;
   padding: 5px;
 }
 
-/* line 375, ../sass/main.scss */
+/* line 376, ../sass/main.scss */
 .teaching-plan {
   transition: all .6s ease 0s;
 }
 
-/* line 379, ../sass/main.scss */
+/* line 380, ../sass/main.scss */
 .teaching-link {
   color: #353230;
   cursor: pointer;
   transition: all .6s ease 0s;
 }
 
-/* line 385, ../sass/main.scss */
+/* line 386, ../sass/main.scss */
 .teaching-link:hover {
   color: #FAB23A;
   outline-width: 0;
@@ -514,7 +508,7 @@ nav {
 }
 
 /* - - E N D of T E A C H I N G - - */
-/* line 391, ../sass/main.scss */
+/* line 392, ../sass/main.scss */
 .line {
   width: 100%;
   height: 1px;
@@ -522,15 +516,18 @@ nav {
 }
 
 /* - - A R T I C L E S - - */
-/* line 397, ../sass/main.scss */
+/* line 398, ../sass/main.scss */
 .articles {
   width: 100%;
   background: #F2F2F2;
+  position: relative;
 }
 
-/* line 401, ../sass/main.scss */
+/* line 403, ../sass/main.scss */
 .articles-title-box {
-  float: right;
+  position: absolute;
+  height: 100%;
+  right: 0;
   width: 30%;
   background: #353230;
   background-image: url(../images/publications.jpg);
@@ -539,58 +536,51 @@ nav {
   background-size: cover;
 }
 @media (max-width: 1024px) {
-  /* line 401, ../sass/main.scss */
+  /* line 403, ../sass/main.scss */
   .articles-title-box {
     width: 100%;
     height: 80px;
-    float: none;
   }
 }
 
-@media (max-width: 1024px) {
-  /* line 415, ../sass/main.scss */
-  .articles-title {
-    line-height: 80px;
-  }
-}
-
-/* line 420, ../sass/main.scss */
+/* line 425, ../sass/main.scss */
 .articles-content, .articles-content-more {
   width: 70%;
   padding: 50px 20px 20px 20px;
   text-align: justify;
 }
 @media (max-width: 1024px) {
-  /* line 420, ../sass/main.scss */
+  /* line 425, ../sass/main.scss */
   .articles-content, .articles-content-more {
     width: 100%;
+    padding-top: 90px;
   }
 }
 
-/* line 428, ../sass/main.scss */
+/* line 434, ../sass/main.scss */
 .articles-content-more {
   width: 100%;
   display: none;
 }
 
-/* line 433, ../sass/main.scss */
+/* line 439, ../sass/main.scss */
 .year {
   color: #FAB23A;
   padding: 10px;
   margin: 0;
 }
 
-/* line 438, ../sass/main.scss */
+/* line 444, ../sass/main.scss */
 .publication {
   padding: 5px;
 }
 
-/* line 441, ../sass/main.scss */
+/* line 447, ../sass/main.scss */
 .bolder {
   font-weight: bolder;
 }
 
-/* line 444, ../sass/main.scss */
+/* line 450, ../sass/main.scss */
 .more, .less {
   background: transparent;
   color: #FAB23A;
@@ -599,13 +589,13 @@ nav {
   padding: 5px;
   font-weight: bolder;
 }
-/* line 451, ../sass/main.scss */
+/* line 457, ../sass/main.scss */
 .more:hover, .less:hover {
   color: #353230;
 }
 
 /* - - H O B B Y - - */
-/* line 459, ../sass/main.scss */
+/* line 465, ../sass/main.scss */
 .hobby {
   background-color: #353230;
   width: 100%;
@@ -613,7 +603,7 @@ nav {
   min-height: 414px;
 }
 
-/* line 466, ../sass/main.scss */
+/* line 472, ../sass/main.scss */
 .hobby-container {
   background-size: cover;
   position: absolute;
@@ -622,7 +612,7 @@ nav {
   min-height: 414px;
 }
 
-/* line 474, ../sass/main.scss */
+/* line 480, ../sass/main.scss */
 .title-holder {
   position: absolute;
   display: -webkit-flex;
@@ -637,50 +627,52 @@ nav {
   padding: 20px;
   margin: 0 20px 0 0;
   background-color: rgba(115, 115, 115, 0.5);
+  z-index: 1;
 }
 @media (max-width: 414px) and (orientation: portrait) {
-  /* line 474, ../sass/main.scss */
+  /* line 480, ../sass/main.scss */
   .title-holder {
     height: 30%;
   }
 }
 
-/* line 491, ../sass/main.scss */
+/* line 498, ../sass/main.scss */
 .hobby-column {
   text-align: center;
 }
 
-/* line 495, ../sass/main.scss */
+/* line 502, ../sass/main.scss */
 .hobby-title {
   vertical-align: middle;
   text-align: center;
 }
 
-/* line 500, ../sass/main.scss */
+/* line 507, ../sass/main.scss */
 .hobby-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin: 0;
+  position: absolute;
 }
 
 /* - - E N D of H O B B Y - - */
 /* - - C O N T A C T - - */
-/* line 510, ../sass/main.scss */
+/* line 519, ../sass/main.scss */
 .contact {
   background-color: #F2F2F2;
   width: 100%;
   height: auto;
 }
 
-/* line 516, ../sass/main.scss */
+/* line 525, ../sass/main.scss */
 .contact-container {
   align-items: center;
   width: 100%;
   height: 100%;
 }
 
-/* line 522, ../sass/main.scss */
+/* line 531, ../sass/main.scss */
 .contact-column-1 {
   background-image: url(../images/adam.jpg);
   background-repeat: no-repeat;
@@ -693,7 +685,7 @@ nav {
   text-align: center;
 }
 @media (max-width: 768px) {
-  /* line 522, ../sass/main.scss */
+  /* line 531, ../sass/main.scss */
   .contact-column-1 {
     height: 80px;
     display: -webkit-flex;
@@ -704,18 +696,18 @@ nav {
   }
 }
 
-/* line 540, ../sass/main.scss */
+/* line 549, ../sass/main.scss */
 .contact-title {
   line-height: 200px;
 }
 @media (max-width: 768px) {
-  /* line 540, ../sass/main.scss */
+  /* line 549, ../sass/main.scss */
   .contact-title {
     line-height: 80px;
   }
 }
 
-/* line 547, ../sass/main.scss */
+/* line 556, ../sass/main.scss */
 .contact-column-2 {
   width: 55%;
   height: 100%;
@@ -729,7 +721,7 @@ nav {
   padding: 20px;
 }
 @media (max-width: 768px) {
-  /* line 547, ../sass/main.scss */
+  /* line 556, ../sass/main.scss */
   .contact-column-2 {
     padding: 10px;
     width: 100%;
@@ -737,7 +729,7 @@ nav {
   }
 }
 
-/* line 562, ../sass/main.scss */
+/* line 571, ../sass/main.scss */
 .contact-content {
   font-size: 1.0rem;
   color: #353230;
@@ -747,22 +739,22 @@ nav {
   display: -webkit-flex;
   display: flex;
 }
-/* line 569, ../sass/main.scss */
+/* line 578, ../sass/main.scss */
 .contact-content p {
   padding-left: 10px;
 }
-/* line 572, ../sass/main.scss */
+/* line 581, ../sass/main.scss */
 .contact-content:hover {
   color: #FAB23A;
 }
 
-/* line 577, ../sass/main.scss */
+/* line 586, ../sass/main.scss */
 .contact-img {
   height: 30px;
   width: auto;
 }
 @media (max-width: 768px) {
-  /* line 577, ../sass/main.scss */
+  /* line 586, ../sass/main.scss */
   .contact-img {
     height: 20px;
   }
@@ -770,7 +762,7 @@ nav {
 
 /* - - E N D of C O N T A C T - - */
 /* - - F O O T E R - - */
-/* line 588, ../sass/main.scss */
+/* line 597, ../sass/main.scss */
 .footer {
   background-color: #353230;
   width: 100%;
@@ -783,7 +775,7 @@ nav {
   grid-template-columns: auto 130px;
 }
 
-/* line 600, ../sass/main.scss */
+/* line 609, ../sass/main.scss */
 .logos {
   display: grid;
   grid-auto-rows: 40px;
@@ -792,31 +784,31 @@ nav {
   width: 100%;
 }
 
-/* line 608, ../sass/main.scss */
+/* line 617, ../sass/main.scss */
 .footer-link {
   display: block;
   height: 40px;
   justify-self: center;
 }
 
-/* line 614, ../sass/main.scss */
+/* line 623, ../sass/main.scss */
 .footer-logo {
   height: 40px;
 }
 
-/* line 618, ../sass/main.scss */
+/* line 627, ../sass/main.scss */
 .footer-p {
   align-self: end;
   justify-self: end;
 }
 
-/* line 625, ../sass/main.scss */
+/* line 634, ../sass/main.scss */
 .f-image {
   max-height: 40px;
   width: auto;
 }
 
-/* line 630, ../sass/main.scss */
+/* line 639, ../sass/main.scss */
 .footer-paragraph {
   font-size: 14px;
   color: #fff;
