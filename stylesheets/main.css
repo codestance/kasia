@@ -130,6 +130,8 @@ nav {
   display: block;
   height: 4px;
   width: 100%;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   opacity: 1;
   left: 0;
@@ -251,7 +253,7 @@ nav {
 /* - - H O M E  P A G E - - */
 /* line 184, ../sass/main.scss */
 .home {
-  min-height: 411px;
+  min-height: 414px;
   width: 100%;
   height: 100vh;
 }
@@ -479,7 +481,7 @@ nav {
   grid-gap: 5px;
   text-align: center;
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   /* line 358, ../sass/main.scss */
   .classes {
     grid-template-columns: 1fr 1fr;
@@ -608,7 +610,7 @@ nav {
   background-color: #353230;
   width: 100%;
   height: 100vh;
-  min-height: 411px;
+  min-height: 414px;
 }
 
 /* line 466, ../sass/main.scss */
@@ -617,7 +619,7 @@ nav {
   position: absolute;
   width: 100%;
   height: 100vh;
-  min-height: 411px;
+  min-height: 414px;
 }
 
 /* line 474, ../sass/main.scss */
@@ -636,7 +638,7 @@ nav {
   margin: 0 20px 0 0;
   background-color: rgba(115, 115, 115, 0.5);
 }
-@media (max-width: 411px) and (orientation: portrait) {
+@media (max-width: 414px) and (orientation: portrait) {
   /* line 474, ../sass/main.scss */
   .title-holder {
     height: 30%;

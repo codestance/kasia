@@ -63,20 +63,25 @@ html, body {
     padding: 10px;
   }
 }
-@media (max-width: 411px) {
+@media (max-width: 414px) {
   /* line 29, ../sass/hobby.scss */
   .photos-box {
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
+    display: block;
   }
 }
 
-/* line 48, ../sass/hobby.scss */
+/* line 49, ../sass/hobby.scss */
 .photo-box {
   justify-self: center;
 }
+@media (max-width: 414px) {
+  /* line 49, ../sass/hobby.scss */
+  .photo-box {
+    padding-bottom: 5px;
+  }
+}
 
-/* line 52, ../sass/hobby.scss */
+/* line 56, ../sass/hobby.scss */
 .photo-box:nth-child(2),
 .photo-box:nth-child(8),
 .photo-box:nth-child(11),
@@ -85,7 +90,7 @@ html, body {
   grid-row: span 2;
 }
 @media (max-width: 768px) {
-  /* line 52, ../sass/hobby.scss */
+  /* line 56, ../sass/hobby.scss */
   .photo-box:nth-child(2),
   .photo-box:nth-child(8),
   .photo-box:nth-child(11),
@@ -96,7 +101,7 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  /* line 67, ../sass/hobby.scss */
+  /* line 71, ../sass/hobby.scss */
   .photo-box:nth-child(5),
   .photo-box:nth-child(10),
   .photo-box:nth-child(17) {
@@ -105,19 +110,20 @@ html, body {
   }
 }
 
-/* line 75, ../sass/hobby.scss */
+/* line 79, ../sass/hobby.scss */
 .photo {
   width: 100%;
+  position: relative;
 }
 
-/* line 79, ../sass/hobby.scss */
+/* line 84, ../sass/hobby.scss */
 .image {
   max-height: 100%;
   max-width: 100%;
   object-fit: scale-down;
 }
 
-/* line 85, ../sass/hobby.scss */
+/* line 90, ../sass/hobby.scss */
 .fullscreen {
   background: rgba(53, 50, 48, 0.7);
   z-index: 9;
@@ -129,7 +135,7 @@ html, body {
   vertical-align: middle;
   display: none;
 }
-/* line 95, ../sass/hobby.scss */
+/* line 100, ../sass/hobby.scss */
 .fullscreen img {
   max-width: 100%;
   max-height: 100%;
@@ -140,9 +146,9 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* line 105, ../sass/hobby.scss */
+/* line 110, ../sass/hobby.scss */
 .btn, .btn-close, .btn-left, .btn-right {
-  background: rgba(53, 50, 48, 0.7);
+  background: transparent;
   width: 30px;
   height: 30px;
   cursor: pointer;
@@ -152,40 +158,88 @@ html, body {
   border-width: 0;
 }
 
-/* line 116, ../sass/hobby.scss */
+/* line 121, ../sass/hobby.scss */
 .btn-close {
   top: 30px;
   right: 20px;
 }
+@media (max-width: 768px) {
+  /* line 121, ../sass/hobby.scss */
+  .btn-close {
+    right: 15px;
+  }
+}
 
-/* line 121, ../sass/hobby.scss */
+/* line 129, ../sass/hobby.scss */
 .btn-left {
   top: 50%;
   left: 20px;
   transform: rotate(180deg);
 }
+@media (max-width: 768px) {
+  /* line 129, ../sass/hobby.scss */
+  .btn-left {
+    left: 15px;
+  }
+}
 
-/* line 127, ../sass/hobby.scss */
+/* line 138, ../sass/hobby.scss */
 .btn-right {
   top: 50%;
   right: 20px;
 }
+@media (max-width: 768px) {
+  /* line 138, ../sass/hobby.scss */
+  .btn-right {
+    right: 15px;
+  }
+}
 
-/* line 133, ../sass/hobby.scss */
+/* line 147, ../sass/hobby.scss */
 .description-box {
   position: absolute;
   z-index: 1;
   bottom: 10px;
   right: 10px;
-  width: 300px;
+  width: 500px;
   background: rgba(53, 50, 48, 0.7);
 }
+@media (max-width: 768px) {
+  /* line 147, ../sass/hobby.scss */
+  .description-box {
+    width: 300px;
+  }
+}
 
-/* line 142, ../sass/hobby.scss */
+/* line 159, ../sass/hobby.scss */
+.description-mobile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(53, 50, 48, 0.7);
+  text-align: center;
+}
+
+/* line 168, ../sass/hobby.scss */
 .description {
   display: none;
   color: #fff;
   padding: 10px;
   margin: 0;
   font-size: 1.3em;
+}
+@media (max-width: 768px) {
+  /* line 168, ../sass/hobby.scss */
+  .description {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 414px) and (orientation: portrait) {
+  /* line 168, ../sass/hobby.scss */
+  .description {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }

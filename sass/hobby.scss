@@ -39,14 +39,18 @@ html,body {
 		padding: 10px;
 	}
 	@media(max-width: $phone){
-		grid-template-columns: 1fr;
-		grid-gap: 5px;
+		// grid-template-columns: 1fr;
+		// grid-gap: 5px;
+		display: block;
 	}
 }
 
 
 .photo-box{
 	justify-self: center;
+	@media(max-width: $phone){
+		padding-bottom: 5px;
+	}
 }
 
 .photo-box:nth-child(2),
@@ -74,6 +78,7 @@ html,body {
 }
 .photo{
 	width: 100%;
+	position: relative;
 }
 
 .image{
@@ -103,7 +108,7 @@ html,body {
 	}
 }
 .btn{
-	background: rgba($primary,.7);
+	background: transparent;
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
@@ -117,17 +122,26 @@ html,body {
 	@extend .btn;
 	top: 30px;
 	right: 20px;
+	@media(max-width: $tablet2){
+		right: 15px
+	}
 }
 .btn-left{
 	@extend .btn;
 	top: 50%;
 	left: 20px;
 	transform: rotate(180deg);
+	@media(max-width: $tablet2){
+		left: 15px
+	}
 }
 .btn-right{
 	@extend .btn;
 	top: 50%;
 	right: 20px;
+	@media(max-width: $tablet2){
+		right: 15px
+	}
 }
 
 .description-box{
@@ -135,8 +149,20 @@ html,body {
 	z-index: 1;
 	bottom: 10px;
 	right: 10px;
-	width: 300px;
+	width: 500px;
 	background: rgba($primary,.7);
+	@media(max-width: $tablet2){
+		width: 300px;
+	}
+}
+
+.description-mobile{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	background: rgba($primary,.7);
+	text-align: center;
 }
 
 .description{
@@ -145,4 +171,12 @@ html,body {
 	padding: 10px;
 	margin: 0;
 	font-size: 1.3em;
+	@media(max-width: $tablet2){
+		font-size: 1.1em;
+	}
+	@media(max-width: $phone) and (orientation: portrait){
+		position: relative;
+    	top: 50%;
+    	transform: translateY(-50%);
+	}
 }
