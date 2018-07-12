@@ -311,45 +311,41 @@ nav {
 /* - - E N D of H O M E  P A G E- - */
 
 /* - - T E A C H I N G - - */
-.teaching {
+#teaching{
 	background-color: $lightBg;
 	width: 100%;
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: 35% 65%;
-	@media(max-width:$tablet){
-		display:block;
-	}
+}
+.teaching {
+	position: relative;
 }
 .teaching-part-1 {
+	position: absolute;
 	background-image: url(../images/teaching.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	width: 35%;
 	height: 100%;
 	text-align: center;
 	@media(max-width:$tablet){
+		position: static;
 		width: 100%;
 		height: 80px;
 	}
 }
 
-.teaching-title {
-	@media(max-width:$tablet){
-		// line-height: 80px;
-	}
-}
-
 .teaching-part-2 {
+	width: 65%;
 	height: 100%;
 	@include justify-content(center);
 	padding: 50px 20px 20px 20px;
 	align-items: center;
-	right: 0;
+	margin-left: 35%;
 	@media(max-width:$tablet){
 		width: 100%;
 		height: auto;
 		padding-top: 10px;
+		margin: 0;
 	}
 }
 .teaching-subtitle {
@@ -395,15 +391,16 @@ nav {
 	background: $secondary;
 }
 /* - - A R T I C L E S - - */
-.articles{
+#articles{
 	width: 100%;
 	background: $lightBg;
+}
+.articles{
 	position: relative;
 }
 .articles-title-box{
 	position: absolute;
 	height: 100%;
-	// float: right;
 	right: 0;
 	width: 30%;
 	background: $primary;
@@ -414,12 +411,6 @@ nav {
 	@media(max-width: $tablet){
 		width: 100%;
 		height: 80px;
-		// float: none;
-	}
-}
-.articles-title{
-	@media(max-width: $tablet){
-		// line-height: 80px;
 	}
 }
 .articles-content{
@@ -432,8 +423,9 @@ nav {
 	}
 }
 .articles-content-more{
-	@extend .articles-content;
 	width: 100%;
+	padding: 0 20px 20px 20px;
+	text-align: justify;
 	display: none;
 }
 .year{
@@ -454,6 +446,8 @@ nav {
 	cursor: pointer;
 	padding: 5px;
 	font-weight: bolder;
+	width: 150px;
+	margin: auto;
 	&:hover{
 		color: $primary;
 	}
@@ -600,22 +594,28 @@ nav {
 	height: auto;
 	min-height: 50px;
 	padding: 5px;
-	position: relative;
+	// position: relative;
 	overflow: hidden;
-	display: grid;
-	grid-template-columns: auto 130px;
+	display: inline-block;
+	// display: grid;
+	// grid-template-columns: auto 130px;
 }
 
 .logos{
-	display: grid;
-	grid-auto-rows: 40px;
-	grid-template-columns: repeat(auto-fill, minmax(55px,1fr));
-	grid-gap: 5px;
-	width: 100%;
+	// display: grid;
+	// grid-auto-rows: 40px;
+	// grid-template-columns: repeat(auto-fill, minmax(55px,1fr));
+	// grid-gap: 5px;
+	// width: 100%;
+	// display: table-cell;
+	vertical-align: middle;
+	overflow: hidden;
 }
 
 .footer-link{
-	display: block;
+	display: inline-block;
+	// display: table-cell;
+	padding: 0 5px;
 	height: 40px;
 	justify-self: center;
 }
@@ -627,8 +627,8 @@ nav {
 .footer-p {
 	// position: absolute;
 	// right: 5px;
-	align-self: end;
-	justify-self: end;
+	// align-self: end;
+	// justify-self: end;
 }
 
 .f-image {

@@ -53,7 +53,6 @@ $(function () {
 
 $("a").on("click", function (event) {
     if (this.hash !== "") {
-        // event.preventDefault();
         var hash = this.hash;
         $('#menu').removeClass('menu-in'); // close right menu after click
         $('#menu-button').removeClass('menu-button_open');
@@ -62,32 +61,24 @@ $("a").on("click", function (event) {
 
 $('.more').on('click', function () {
     "use strict";
-    var tH = $('.articles-title-box').height();
     $('.articles-content-more').slideDown('slow');
-    $('.articles-title-box').css('height', tH, +'px');
     $('.more').css('display', 'none');
 });
 $('.less').on('click', function () {
     "use strict";
-    // tutaj!! ustalanie wartości wysokości art-title-box po zamknieciu dodatkowych art
-    var tH = $('.articles-title-box').height();
     $('.articles-content-more').slideUp('slow');
-    $('.articles-title-box').css('height', tH, +'px');
+    $('html,body').scrollTop($('#articles').offset().top);
     $('.more').css('display', 'block');
 });
 
 
-function setArticlesTitle() {
+function setTitle() {
     "use strict";
     if (window.matchMedia('(min-width: 1024px )').matches) {
-        var teachingH = $('.teaching-part-1').height();
+        var teachingH = $('.teaching').height();
         $('.teaching-title').css("line-height", teachingH + 'px');
 
-        // var artPadd = parseInt($('.articles-content').css('padding-top')) + parseInt($('.articles-content').css('padding-bottom'));
-        // var artH = $('.articles-content').height() + artPadd;
-        // $('.articles-title-box').css('height', artH + 'px');
         var artH = $('.articles').height();
-        // $('.articles-title-box').css('height', artH + 'px');
         $('.articles-title').css('line-height', artH + 'px');
     } else {
         $('.teaching-title').css("line-height", 80 + 'px');
@@ -95,11 +86,4 @@ function setArticlesTitle() {
     }
 }
 
-// window.addEventListener('load',setArticlesTitle());
-// $(window).on('load', setArticlesTitle());
-
-// var tablet = 1024;
-// if ($(window).width() > tablet) {
-$(window).on('resize', setArticlesTitle).resize();
-// $('.articles-content').on('resize', setArticlesTitle()).resize();
-// }
+$(window).on('resize', setTitle).resize();
