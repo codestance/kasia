@@ -1,7 +1,7 @@
 /*global $*/
 /*global window*/
 
-var slideTime = $('.hobby-image').length * 300;
+var slideTime = $('.hobby-image').length * 1000;
 $('.hobby-image:gt(0)').hide();
 setInterval(function () {
     "use strict";
