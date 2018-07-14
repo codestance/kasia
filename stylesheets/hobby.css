@@ -259,3 +259,9 @@ html, body {
     padding: 5px;
   }
 }
+@media all and (-ms-high-contrast: none) and (max-width: 450px), (-ms-high-contrast: active) and (max-width: 450px) {
+  /* line 183, ../sass/hobby.scss */
+  .photo-box {
+    width: 300px;
+  }
+}

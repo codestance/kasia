@@ -17,3 +17,9 @@
   height: 150px;
   max-width: 280px;
 }
+@media (max-width: 768px) {
+  /* line 10, ../sass/ie.scss */
+  .class {
+    height: auto;
+  }
+}

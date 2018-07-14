@@ -374,6 +374,9 @@ nav {
 		overflow: hidden;
 		height: 150px;
 		max-width: 280px;
+		@media(max-width: $tablet2){
+			height: auto;
+		}
 	}
 }
 
