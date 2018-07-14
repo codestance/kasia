@@ -1,45 +1,12 @@
 /*global $*/
 /*global window*/
-// var index = 0;
-// slideShow();
-var slideTime = $('.hobby-image').length * 1000;
-// console.log(slideTime);
+
+var slideTime = $('.hobby-image').length * 300;
 $('.hobby-image:gt(0)').hide();
 setInterval(function () {
     "use strict";
-    $('.hobby-image:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.hobby-container');
+    $('.hobby-image:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.hobby-link');
 }, slideTime);
-
-
-// function slideShow() {
-//     "use strict";
-//     var i;
-//     for (i = 0; i < $('.hobby-image').length; i++) {
-//         $($('.hobby-image')[i]).css('display', 'none');
-//     }
-//     index++;
-//     if (index > $('.hobby-image').length) {
-//         index = 1;
-//     }
-//     $($('.hobby-image')[index - 1]).css('display', 'block');
-//     setTimeout(slideShow, 3000);
-// }
-
-// $(function smoothScroll() {
-//     "use strict";
-//     $('a[href*="#"]:not([href="#"])').click(function () {
-//         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
-//             var item = $(this.hash);
-//             item = item.length ? item : $('[name=' + this.hash.slice(1) + ']');
-//             if (item.length) {
-//                 $('html, body').animate({
-//                     scrollTop: item.offset().top
-//                 }, 1000);
-//                 return false;
-//             }
-//         }
-//     });
-// });
 
 $(function () {
     "use strict";
@@ -51,9 +18,9 @@ $(function () {
     });
 });
 
-$("a").on("click", function (event) {
+$("a").on("click", function () {
+    "use strict";
     if (this.hash !== "") {
-        var hash = this.hash;
         $('#menu').removeClass('menu-in'); // close right menu after click
         $('#menu-button').removeClass('menu-button_open');
     }
@@ -70,7 +37,6 @@ $('.less').on('click', function () {
     $('html,body').scrollTop($('#articles').offset().top);
     $('.more').css('display', 'block');
 });
-
 
 function setTitle() {
     "use strict";
