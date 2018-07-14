@@ -28,7 +28,6 @@ html,body {
 
 .photos-box{
 	display: grid;
-	// grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
 	grid-template-columns: repeat(4,1fr);
 	grid-gap: 10px;
 	width: 100%;
@@ -39,8 +38,6 @@ html,body {
 		padding: 10px;
 	}
 	@media(max-width: $phone){
-		// grid-template-columns: 1fr;
-		// grid-gap: 5px;
 		display: block;
 	}
 }
@@ -64,8 +61,6 @@ html,body {
 		grid-row: span 1;
 	}
 }
-
-
 
 // .photo-box:nth-child(22)
 .photo-box:nth-child(5),
@@ -116,7 +111,6 @@ html,body {
 	z-index: 99;
 	border-radius: 3px;
 	border-width: 0;
-	// display: none;
 }
 .btn-close{
 	@extend .btn;
@@ -178,5 +172,18 @@ html,body {
 		position: relative;
     	top: 50%;
     	transform: translateY(-50%);
+	}
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.photos-box{
+		display: block;
+		text-align: center;
+	}
+	.photo-box{
+		width: 420px;
+		display: inline-block;
+		vertical-align: middle;
+		padding: 5px
 	}
 }

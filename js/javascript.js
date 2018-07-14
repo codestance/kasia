@@ -3,7 +3,7 @@
 // var index = 0;
 // slideShow();
 var slideTime = $('.hobby-image').length * 1000;
-console.log(slideTime);
+// console.log(slideTime);
 $('.hobby-image:gt(0)').hide();
 setInterval(function () {
     "use strict";

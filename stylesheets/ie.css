@@ -3,3 +3,17 @@
  * <!--[if IE]>
  *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
  * <![endif]--> */
+/* line 6, ../sass/ie.scss */
+.classes {
+  display: block;
+  vertical-align: middle;
+}
+
+/* line 10, ../sass/ie.scss */
+.class {
+  display: inline-block;
+  zoom: 1;
+  overflow: hidden;
+  height: 150px;
+  max-width: 280px;
+}

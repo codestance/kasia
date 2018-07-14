@@ -105,12 +105,15 @@ $(document).keydown(function (e) {
     if ($('.fullscreen').css('display') === 'block') {
         switch (e.key) {
         case 'ArrowLeft':
+        case 'Left':
             imgNav('prev');
             break;
         case 'ArrowRight':
+        case 'Right':
             imgNav('next');
             break;
         case 'Escape':
+        case 'Esc':
             imgClose();
             break;
         default:
