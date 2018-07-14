@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext");
+/* line 2, ../sass/_reset.scss */
+html, body {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 11, ../sass/_reset.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 17, ../sass/_reset.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 6, ../sass/hobby.scss */
+html, body {
+  font-family: 'Montserrat';
+  scroll-behavior: smooth;
+  background: #F2F2F2;
+}
+
+/* line 12, ../sass/hobby.scss */
+.back-button-box {
+  height: 50px;
+  position: relative;
+}
+
+/* line 17, ../sass/hobby.scss */
+.back-button {
+  height: 30px;
+  width: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* line 29, ../sass/hobby.scss */
+.photos-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  /* line 29, ../sass/hobby.scss */
+  .photos-box {
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+  }
+}
+@media (max-width: 414px) {
+  /* line 29, ../sass/hobby.scss */
+  .photos-box {
+    display: block;
+  }
+}
+
+/* line 46, ../sass/hobby.scss */
+.photo-box {
+  justify-self: center;
+}
+@media (max-width: 414px) {
+  /* line 46, ../sass/hobby.scss */
+  .photo-box {
+    padding-bottom: 5px;
+  }
+}
+
+/* line 53, ../sass/hobby.scss */
+.photo-box:nth-child(2),
+.photo-box:nth-child(8),
+.photo-box:nth-child(11),
+.photo-box:nth-child(14) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+@media (max-width: 768px) {
+  /* line 53, ../sass/hobby.scss */
+  .photo-box:nth-child(2),
+  .photo-box:nth-child(8),
+  .photo-box:nth-child(11),
+  .photo-box:nth-child(14) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 66, ../sass/hobby.scss */
+  .photo-box:nth-child(5),
+  .photo-box:nth-child(10),
+  .photo-box:nth-child(17) {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+}
+
+/* line 74, ../sass/hobby.scss */
+.photo {
+  width: 100%;
+  position: relative;
+}
+
+/* line 79, ../sass/hobby.scss */
+.image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: scale-down;
+}
+
+/* line 85, ../sass/hobby.scss */
+.fullscreen {
+  background: rgba(53, 50, 48, 0.7);
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  display: none;
+}
+/* line 95, ../sass/hobby.scss */
+.fullscreen img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 105, ../sass/hobby.scss */
+.btn, .btn-close, .btn-left, .btn-right {
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  border-radius: 3px;
+  border-width: 0;
+}
+
+/* line 115, ../sass/hobby.scss */
+.btn-close {
+  top: 30px;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  /* line 115, ../sass/hobby.scss */
+  .btn-close {
+    right: 15px;
+  }
+}
+
+/* line 123, ../sass/hobby.scss */
+.btn-left {
+  top: 50%;
+  left: 20px;
+  transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  /* line 123, ../sass/hobby.scss */
+  .btn-left {
+    left: 15px;
+  }
+}
+
+/* line 132, ../sass/hobby.scss */
+.btn-right {
+  top: 50%;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  /* line 132, ../sass/hobby.scss */
+  .btn-right {
+    right: 15px;
+  }
+}
+
+/* line 141, ../sass/hobby.scss */
+.description-box {
+  position: absolute;
+  z-index: 1;
+  bottom: 10px;
+  right: 10px;
+  width: 500px;
+  background: rgba(53, 50, 48, 0.7);
+}
+@media (max-width: 768px) {
+  /* line 141, ../sass/hobby.scss */
+  .description-box {
+    width: 300px;
+  }
+}
+
+/* line 153, ../sass/hobby.scss */
+.description-mobile {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background: rgba(53, 50, 48, 0.7);
+  text-align: center;
+}
+
+/* line 162, ../sass/hobby.scss */
+.description {
+  display: none;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.3em;
+}
+@media (max-width: 768px) {
+  /* line 162, ../sass/hobby.scss */
+  .description {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 414px) and (orientation: portrait) {
+  /* line 162, ../sass/hobby.scss */
+  .description {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* line 179, ../sass/hobby.scss */
+  .photos-box {
+    display: block;
+    text-align: center;
+  }
+
+  /* line 183, ../sass/hobby.scss */
+  .photo-box {
+    width: 420px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+  }
+}
+@media all and (-ms-high-contrast: none) and (max-width: 450px), (-ms-high-contrast: active) and (max-width: 450px) {
+  /* line 183, ../sass/hobby.scss */
+  .photo-box {
+    width: 300px;
+  }
+}
