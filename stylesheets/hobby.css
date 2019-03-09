@@ -8,33 +8,33 @@ html, body {
   padding: 0;
 }
 
-/* line 11, ../sass/_reset.scss */
+/* line 9, ../sass/_reset.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, ../sass/_reset.scss */
+/* line 14, ../sass/_reset.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 6, ../sass/hobby.scss */
+/* line 5, ../sass/hobby.scss */
 html, body {
   font-family: 'Montserrat';
   scroll-behavior: smooth;
   background: #F2F2F2;
 }
 
-/* line 12, ../sass/hobby.scss */
+/* line 11, ../sass/hobby.scss */
 .back-button-box {
   height: 50px;
   position: relative;
 }
 
-/* line 17, ../sass/hobby.scss */
+/* line 16, ../sass/hobby.scss */
 .back-button {
   height: 30px;
   width: auto;
@@ -47,7 +47,7 @@ html, body {
   cursor: pointer;
 }
 
-/* line 29, ../sass/hobby.scss */
+/* line 28, ../sass/hobby.scss */
 .photos-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -57,42 +57,45 @@ html, body {
   align-items: center;
 }
 @media (max-width: 768px) {
-  /* line 29, ../sass/hobby.scss */
+  /* line 28, ../sass/hobby.scss */
   .photos-box {
     grid-template-columns: 1fr 1fr;
     padding: 10px;
   }
 }
 @media (max-width: 414px) {
-  /* line 29, ../sass/hobby.scss */
+  /* line 28, ../sass/hobby.scss */
   .photos-box {
     display: block;
   }
 }
 
-/* line 46, ../sass/hobby.scss */
+/* line 45, ../sass/hobby.scss */
 .photo-box {
   justify-self: center;
 }
 @media (max-width: 414px) {
-  /* line 46, ../sass/hobby.scss */
+  /* line 45, ../sass/hobby.scss */
   .photo-box {
     padding-bottom: 5px;
   }
 }
 
-/* line 53, ../sass/hobby.scss */
+/* line 52, ../sass/hobby.scss */
+.photo-box:nth-child(10) {
+  grid-row: span 2;
+}
+
+/* line 56, ../sass/hobby.scss */
 .photo-box:nth-child(2),
-.photo-box:nth-child(8),
 .photo-box:nth-child(11),
 .photo-box:nth-child(14) {
   grid-column: span 2;
   grid-row: span 2;
 }
 @media (max-width: 768px) {
-  /* line 53, ../sass/hobby.scss */
+  /* line 56, ../sass/hobby.scss */
   .photo-box:nth-child(2),
-  .photo-box:nth-child(8),
   .photo-box:nth-child(11),
   .photo-box:nth-child(14) {
     grid-column: span 1;
@@ -101,29 +104,30 @@ html, body {
 }
 
 @media (max-width: 768px) {
-  /* line 66, ../sass/hobby.scss */
+  /* line 67, ../sass/hobby.scss */
   .photo-box:nth-child(5),
-  .photo-box:nth-child(10),
-  .photo-box:nth-child(17) {
+  .photo-box:nth-child(8),
+  .photo-box:nth-child(16),
+  .photo-box:nth-child(21) {
     grid-column: span 2;
     grid-row: span 2;
   }
 }
 
-/* line 74, ../sass/hobby.scss */
+/* line 76, ../sass/hobby.scss */
 .photo {
   width: 100%;
   position: relative;
 }
 
-/* line 79, ../sass/hobby.scss */
+/* line 81, ../sass/hobby.scss */
 .image {
   max-height: 100%;
   max-width: 100%;
   object-fit: scale-down;
 }
 
-/* line 85, ../sass/hobby.scss */
+/* line 87, ../sass/hobby.scss */
 .fullscreen {
   background: rgba(53, 50, 48, 0.7);
   z-index: 9;
@@ -135,7 +139,7 @@ html, body {
   vertical-align: middle;
   display: none;
 }
-/* line 95, ../sass/hobby.scss */
+/* line 97, ../sass/hobby.scss */
 .fullscreen img {
   max-width: 100%;
   max-height: 100%;
@@ -146,7 +150,7 @@ html, body {
   transform: translate(-50%, -50%);
 }
 
-/* line 105, ../sass/hobby.scss */
+/* line 107, ../sass/hobby.scss */
 .btn, .btn-close, .btn-left, .btn-right {
   background: transparent;
   width: 30px;
@@ -158,44 +162,44 @@ html, body {
   border-width: 0;
 }
 
-/* line 115, ../sass/hobby.scss */
+/* line 117, ../sass/hobby.scss */
 .btn-close {
   top: 30px;
   right: 20px;
 }
 @media (max-width: 768px) {
-  /* line 115, ../sass/hobby.scss */
+  /* line 117, ../sass/hobby.scss */
   .btn-close {
     right: 15px;
   }
 }
 
-/* line 123, ../sass/hobby.scss */
+/* line 125, ../sass/hobby.scss */
 .btn-left {
   top: 50%;
   left: 20px;
   transform: rotate(180deg);
 }
 @media (max-width: 768px) {
-  /* line 123, ../sass/hobby.scss */
+  /* line 125, ../sass/hobby.scss */
   .btn-left {
     left: 15px;
   }
 }
 
-/* line 132, ../sass/hobby.scss */
+/* line 134, ../sass/hobby.scss */
 .btn-right {
   top: 50%;
   right: 20px;
 }
 @media (max-width: 768px) {
-  /* line 132, ../sass/hobby.scss */
+  /* line 134, ../sass/hobby.scss */
   .btn-right {
     right: 15px;
   }
 }
 
-/* line 141, ../sass/hobby.scss */
+/* line 143, ../sass/hobby.scss */
 .description-box {
   position: absolute;
   z-index: 1;
@@ -205,13 +209,13 @@ html, body {
   background: rgba(53, 50, 48, 0.7);
 }
 @media (max-width: 768px) {
-  /* line 141, ../sass/hobby.scss */
+  /* line 143, ../sass/hobby.scss */
   .description-box {
     width: 300px;
   }
 }
 
-/* line 153, ../sass/hobby.scss */
+/* line 155, ../sass/hobby.scss */
 .description-mobile {
   width: 100%;
   height: 100%;
@@ -221,7 +225,7 @@ html, body {
   text-align: center;
 }
 
-/* line 162, ../sass/hobby.scss */
+/* line 164, ../sass/hobby.scss */
 .description {
   display: none;
   color: #fff;
@@ -230,13 +234,13 @@ html, body {
   font-size: 1.3em;
 }
 @media (max-width: 768px) {
-  /* line 162, ../sass/hobby.scss */
+  /* line 164, ../sass/hobby.scss */
   .description {
     font-size: 1.1em;
   }
 }
 @media (max-width: 414px) and (orientation: portrait) {
-  /* line 162, ../sass/hobby.scss */
+  /* line 164, ../sass/hobby.scss */
   .description {
     position: relative;
     top: 50%;
@@ -245,13 +249,13 @@ html, body {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* line 179, ../sass/hobby.scss */
+  /* line 181, ../sass/hobby.scss */
   .photos-box {
     display: block;
     text-align: center;
   }
 
-  /* line 183, ../sass/hobby.scss */
+  /* line 185, ../sass/hobby.scss */
   .photo-box {
     width: 420px;
     display: inline-block;
@@ -260,7 +264,7 @@ html, body {
   }
 }
 @media all and (-ms-high-contrast: none) and (max-width: 450px), (-ms-high-contrast: active) and (max-width: 450px) {
-  /* line 183, ../sass/hobby.scss */
+  /* line 185, ../sass/hobby.scss */
   .photo-box {
     width: 300px;
   }
