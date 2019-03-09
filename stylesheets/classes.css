@@ -8,14 +8,14 @@ html, body {
   padding: 0;
 }
 
-/* line 11, ../sass/_reset.scss */
+/* line 9, ../sass/_reset.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 17, ../sass/_reset.scss */
+/* line 14, ../sass/_reset.scss */
 a:active,
 a:hover {
   outline: 0;

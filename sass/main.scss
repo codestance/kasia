@@ -14,7 +14,6 @@ h1 {
 		font-size: 2.3rem;
 	}
 }
-
 h2 {
 	font-size: 2.8rem;
 	vertical-align: middle;
@@ -23,16 +22,14 @@ h2 {
 		font-size: 2.0rem;
 	}
 }
-
 h3 {
 	font-size: 1.8rem;
 	@media(max-width: $tablet2){
 		font-size: 1.3rem;
 	}
 }
-
 p {
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	color: $primary;
 	margin: 0;
 	@media (max-width: $tablet2){
@@ -237,7 +234,7 @@ nav {
 
 .photo{
 	float: right;
-	background-image: url(../images/bgkatarzynagwozdz.jpg);
+	background-image: url(../images/katarzynagwozdz.jpg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -283,7 +280,7 @@ nav {
 		@include display-flex;
 		height: 60vh;
 		float: right;
-		background-image: url(../images/bgkatarzynagwozdz_mobile.jpg);
+		background-image: url(../images/katarzynagwozdz_mobile.jpg);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -333,7 +330,7 @@ nav {
 	width: 65%;
 	height: 100%;
 	@include justify-content(center);
-	padding: 50px 20px 20px 20px;
+	padding: 55px 20px 20px 20px;
 	align-items: center;
 	margin-left: 35%;
 	@media(max-width:$tablet){
@@ -342,10 +339,6 @@ nav {
 		padding-top: 10px;
 		margin: 0;
 	}
-}
-.teaching-subtitle {
-	margin-bottom: 10px;
-	text-shadow: none;
 }
 .classes{
 	display: grid;
@@ -357,7 +350,6 @@ nav {
 		grid-template-columns: 1fr 1fr;
 	}
 }
-
 .class{
 	border: 1px solid $secondary;
 	padding: 5px;
@@ -366,7 +358,6 @@ nav {
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .classes{
 		display: block;
-		vertical-align: middle;
 	}
 	.class{
 		display: inline-block;
@@ -427,7 +418,6 @@ nav {
 .articles-content{
 	width: 70%;
 	padding: 50px 20px 20px 20px;
-	text-align: justify;
 	@media(max-width: $tablet){
 		width: 100%;
 		padding-top: 90px;
@@ -436,7 +426,6 @@ nav {
 .articles-content-more{
 	width: 100%;
 	padding: 0 20px 20px 20px;
-	text-align: justify;
 	display: none;
 }
 .year{
